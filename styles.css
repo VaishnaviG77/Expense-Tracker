@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(/images/plain-smooth-green-wall-texture_53876-129746.avif);
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    text-align: center;
+    background-image: linear-gradient(45deg, #00a674 0%, #4caf50 51%, #00a674 100%);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.input-section select, .input-section input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-section button {
+    padding: 8px 12px;
+    background-color: #3e4a3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #45a049;
+}
+
+.divider {
+    height: 2px; /* Height of the line */
+    background-color: #4caf50; /* Color of the line */
+    margin: 20px 0; /* Space above and below the line */
+    border-radius: 5px; /* Rounded edges for a softer look */
+}
+
+/* Optional: Add shadow for a more attractive look */
+.divider::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px; /* Thin shadow line */
+    background-color: rgba(0, 0, 0, 0.1); /* Shadow color */
+    top: -1px; /* Position it slightly above the main line */
+}
+
+
+/* #sort-btn {
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #4caf50;
+    cursor: pointer;
+} */
+
+.header1 {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between header text and button */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+.header1 h1 {
+    font-size: 2em; /* Adjust header font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+#sort-btn {
+    padding: 10px 20px; /* Add padding for the button */
+    font-size: 1em; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #00897b; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#sort-btn:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+
+#sort-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+#sort-btn:active {
+    transform: scale(0.95);
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.filter-section input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-section button {
+    padding: 8px 12px;
+    background-color: #3e4a3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-section button:hover {
+    background-color: #45a049;
+}
+
+.expenses-list {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.delete-btn, .edit-btn {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.edit-btn {
+    background-color: #2196f3;
+}
+
+.edit-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Responsive Styles */
+@media (min-width: 375px) and (max-width: 812px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .input-section, .filter-section {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    #remove-filter-btn {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 413px) and (max-width: 915px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .input-section, .filter-section {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #remove-filter-btn {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .input-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-section select, .input-section input, .input-section button {
+        flex: 1;
+        min-width: 150px;
+        margin-bottom: 0;
+    }
+
+    .filter-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    #remove-filter-btn {
+        margin-top: 5px;
+    }
+}
