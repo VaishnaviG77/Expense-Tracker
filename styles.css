@@ -55,70 +55,45 @@ body {
 }
 
 .divider {
-    height: 2px; /* Height of the line */
-    background-color: #4caf50; /* Color of the line */
-    margin: 20px 0; /* Space above and below the line */
-    border-radius: 5px; /* Rounded edges for a softer look */
+    height: 2px;
+    background-color: #4caf50;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
-/* Optional: Add shadow for a more attractive look */
 .divider::before {
     content: '';
     display: block;
     position: relative;
-    height: 1px; /* Thin shadow line */
-    background-color: rgba(0, 0, 0, 0.1); /* Shadow color */
-    top: -1px; /* Position it slightly above the main line */
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: -1px;
 }
 
-
-/* #sort-btn {
-    margin-bottom: 30px;
-    padding: 15px 30px;
-    text-align: center;
-    transition: 0.5s;
-    color: white;
-    border-radius: 10px;
-    font-weight: 700;
-    background-color: #4caf50;
-    cursor: pointer;
-} */
-
 .header1 {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between header text and button */
-    align-items: center; /* Center vertically */
-    margin-bottom: 20px; /* Add space below the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .header1 h1 {
-    font-size: 2em; /* Adjust header font size as needed */
-    margin: 0; /* Remove default margin */
+    font-size: 2em;
+    margin: 0;
 }
 
 #sort-btn {
-    padding: 10px 20px; /* Add padding for the button */
-    font-size: 1em; /* Adjust font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    background-color: #00897b; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #00897b;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 #sort-btn:hover {
-    background-color: #45a049; /* Darker shade on hover */
-}
-
-
-#sort-btn:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-}
-  
-#sort-btn:active {
-    transform: scale(0.95);
+    background-color: #45a049;
 }
 
 .filter-section {
@@ -262,9 +237,5 @@ tfoot td {
 
     table {
         font-size: 16px;
-    }
-
-    #remove-filter-btn {
-        margin-top: 5px;
     }
 }
