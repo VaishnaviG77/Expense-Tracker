@@ -1,5 +1,4 @@
 # 📊 Expense Tracker
-# Expense Tracker
 
 An Expense Tracker app that allows users to track their expenses, categorize them, and filter them based on dates. The app supports sorting expenses by amount or date, editing and deleting individual entries, and viewing the total amount spent.
 
