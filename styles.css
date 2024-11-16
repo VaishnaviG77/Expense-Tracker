@@ -74,7 +74,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .header1 h1 {
@@ -82,17 +81,28 @@ body {
     margin: 0;
 }
 
-#sort-btn {
+#sort-by-amount-btn,#sort-by-date-btn {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 0.8em;
     cursor: pointer;
     background-color: #00897b;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+.sbtn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
 }
 
-#sort-btn:hover {
+
+
+#sort-by-amount-btn:hover {
+    background-color: #45a049;
+}
+#sort-by-date-btn:hover {
     background-color: #45a049;
 }
 
