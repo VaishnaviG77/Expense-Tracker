@@ -1,48 +1,52 @@
 # 📊 Expense Tracker
-Expense Tracker is a simple web application that helps users track their expenses by category, amount, and date. Users can add, edit, delete, filter, and sort their expenses and see the total amount spent.
-Features
+# Expense Tracker
 
-    Add Expense: Users can input a category, amount, and date for their expenses.
-    Edit and Delete: Each expense can be edited or deleted after it's added.
-    Sort by Date: Sort all expenses by date in ascending order.
-    Filter by Date Range: Filter expenses based on a start and end date.
-    Remove Filter: Clear any applied filters to show all expenses.
-    Persistent Data: The expenses are saved in the browser's local storage, so they are retained even after the page is reloaded.
+An Expense Tracker app that allows users to track their expenses, categorize them, and filter them based on dates. The app supports sorting expenses by amount or date, editing and deleting individual entries, and viewing the total amount spent.
 
-How to Use
+## Features
 
-    Add an Expense:
-        Select a category from the dropdown.
-        Enter the amount you spent.
-        Choose the date.
-        Click the Add button to record the expense.
+- **Add Expenses**: Add new expenses by selecting a category, entering an amount, and specifying the date.
+- **Edit Expenses**: Edit any existing expense by selecting an expense to modify and updating the fields.
+- **Delete Expenses**: Remove any expense from the list.
+- **Sort Expenses**:
+  - Sort expenses by amount (ascending or descending).
+  - Sort expenses by date (ascending or descending).
+- **Filter by Date**: Filter expenses within a date range.
+- **Total Amount**: View the total sum of all recorded expenses.
 
-    Edit an Expense:
-        Click the Edit button next to the expense you want to change.
-        Update the category, amount, or date in the input fields.
-        Click the Update button to save changes.
+## Demo
 
-    Delete an Expense:
-        Click the Delete button next to the expense you want to remove.
+- **Add Expense**: Select a category, enter an amount, and date, then click "Add."
+- **Edit Expense**: Click "Edit" next to any expense to modify it.
+- **Delete Expense**: Click "Delete" next to any expense to remove it.
+- **Sort**: Click on "Sort by Amount" or "Sort by Date" to sort expenses.
+- **Filter**: Use the filter section to show expenses between selected start and end dates.
 
-    Sort by Date:
-        Click the Sort by Date button to arrange your expenses by date.
+## Technologies Used
 
-    Filter Expenses:
-        Select a start date and an end date.
-        Click the Filter button to view only the expenses within that date range.
+- **HTML**: Basic structure of the app (form, table, buttons).
+- **CSS**: Basic styles for the app (colors, table styling, buttons).
+- **JavaScript**: Handles the main logic for adding, editing, deleting, sorting, and filtering expenses.
 
-    Remove Filter:
-        Click the Remove Filter button to clear the filter and see all expenses.
+## How It Works
 
-Technologies Used
+### Expense Addition:
+- When an expense is added, it's stored temporarily within the current session (no persistent storage).
+- The expense data includes the category, amount, and date of the expense.
 
-    HTML: Structure of the app.
-    CSS: Styling of the app, including layout and design.
-    JavaScript: Handles adding, editing, deleting, sorting, filtering, and saving expenses.
+### Expense Editing:
+- Editing an expense is done by clicking the "Edit" button. The existing expense is removed, and the fields are pre-populated for updating.
 
-Future Improvements
+### Expense Deletion:
+- Deleting an expense removes the corresponding row from the expense list.
 
-    Add charts and graphs to visualize spending patterns.
-    Enable user authentication to save expenses across devices.
-    Support multiple currencies.
+### Sorting:
+- Clicking on "Sort by Amount" will toggle between ascending and descending order based on the expense amount.
+- Clicking on "Sort by Date" will toggle between ascending and descending order based on the expense date.
+
+### Date Filtering:
+- Users can filter expenses by specifying a start date and end date. Only expenses that fall within this range are shown.
+
+## Requirements
+
+This application runs entirely in the browser and requires no backend or database. It stores data temporarily in the current session.
